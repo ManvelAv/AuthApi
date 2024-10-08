@@ -4,12 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthApi", "AuthApi.csproj", "{C7D6347C-038F-42CA-8EFE-A910F86DE10B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1DE84981-C65D-42D7-9339-3BE11DF2A6ED} = {1DE84981-C65D-42D7-9339-3BE11DF2A6ED}
+		{476CDB00-BFD3-4BC4-AE0C-E16B58900432} = {476CDB00-BFD3-4BC4-AE0C-E16B58900432}
+		{BB73B9E8-13EF-4039-83A9-8998AC225ACB} = {BB73B9E8-13EF-4039-83A9-8998AC225ACB}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainApp", "..\MainApp\MainApp.csproj", "{BB73B9E8-13EF-4039-83A9-8998AC225ACB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskApi", "..\TaskApi\TaskApi.csproj", "{1DE84981-C65D-42D7-9339-3BE11DF2A6ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskGrpcService", "..\TaskGrpcService\TaskGrpcService.csproj", "{476CDB00-BFD3-4BC4-AE0C-E16B58900432}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskGrpcService", "..\TaskGrpcService\TaskGrpcService.csproj", "{476CDB00-BFD3-4BC4-AE0C-E16B58900432}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
